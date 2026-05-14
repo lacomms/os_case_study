@@ -1,0 +1,48 @@
+OPENING THE WEBSITE
+
+- Open the website by using the provided link inside the GitHub repository/document.
+- Wait for the homepage of the CPU Schedule Simulator to load completely before proceeding.
+- The homepage contains the title of the simulator and the interactive panels for selecting scheduling algorithms.
+
+PICKING THE CPU SCHEDULE ALGORITHM
+
+- After opening it, the panels consisting of all 7 CPU schedules are displayed one by one.
+- The available algorithms are FCFS, SJF, SRT, RR, PS(P), PS(NP), and PS(RR).
+- To select an algorithm, click the left or right arrowheads to pick the algorithm you want.
+- The abbreviation and complete name of the selected scheduling algorithm are displayed on the screen.
+- After selecting the algorithm, press ENTER to proceed to the Number of Processes page.
+
+CHOOSING THE NUMBER OF PROCESSES
+
+- Once you have chosen the algorithm, you will be directed to the Number of Processes page.
+- On this page, you can choose how many processes you want to schedule using the selected algorithm.
+- The number of processes has a minimum of 3 and a maximum of 10.
+- Only integers are allowed to be input in the text box.
+- Invalid inputs such as empty fields, decimals, negative values, or values outside the allowed range are automatically rejected by the system.
+- After selecting the right number of processes, press ENTER to proceed to the Input Metrics page.
+
+INPUT METRICS
+
+- This page enables the user to input certain data that will be used to calculate the process metrics of the CPU schedule used.
+- The user is required to input the Burst Time, Arrival Time, Priority Value, Process Identifiers, and Time Quantum depending on the selected algorithm.
+- Burst Time refers to the amount of CPU execution time needed by a process.
+- Arrival Time refers to the time when a process enters the ready queue.
+- Priority Value determines the importance level of a process in Priority Scheduling algorithms. Lower values represent higher priority.
+- Time Quantum is only required for Round Robin and Priority Scheduling with Round Robin algorithms. It determines how long a process can use the CPU before switching to another process.
+- Inputs are entered one at a time by pressing the “Add →” button or by pressing the Enter key on the keyboard.
+- Invalid inputs such as negative values, empty fields, or values outside the allowed range are automatically rejected by the system.
+- After all required inputs are completed, the ENTER button becomes available.
+- Press ENTER to proceed to the Results page.
+
+RESULTS PAGE
+
+- After pressing ENTER, the simulator automatically calculates the scheduling results based on the selected algorithm and the provided process data.
+- The selected scheduling algorithm and the dataset information are displayed at the top of the page.
+- The Gantt Chart is shown to visually represent the execution order of processes and the time intervals in which they were executed.
+- Each block in the Gantt Chart corresponds to a specific process and its execution duration.
+- Below the Gantt Chart is the Process Metrics Table.
+- The table displays the Process ID, Burst Time, Arrival Time, Priority Value, Completion Time, Waiting Time, and Turnaround Time of each process.
+- Waiting Time refers to the total time a process spends waiting in the ready queue before execution.
+- Turnaround Time refers to the total time from process arrival until process completion.
+- The simulator also calculates the Average Waiting Time and Average Turnaround Time for all processes to evaluate the performance of the selected scheduling algorithm.
+- To test another dataset or scheduling algorithm, press the RESET button to return to the homepage.
